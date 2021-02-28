@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+    --fontFamily: 'Montserrat', sans-serif;
+    --colorFooter: #373b44;
+    --colorWhite: #fff;
+    --colorPink: #ffaad8;
+    /*255, 170, 216*/
+    --colorFont: #39393b;
+    --fontSize: 16px;
+    --padding: 50px 0;
+    --transition: .4 ease;
+
+}
+
+/**********
+***********
+basic style
+***********
+**********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.btn {
+    background: none;
+    border: 1px solid var(--colorWhite);
+    padding: 10px 30px;
+    color: var(--colorWhite);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background: var(--colorWhite);
+    color: var(--colorFooter);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+/**********
+***********
+navBar
+***********
+**********/
+.navBar {
+    background-color: var(--colorFooter);
+}
+
+.navBar h4 {
+    color: var(--colorWhite);
+    padding: 10px
+}
+
+.navBar h4 a {
+    color: var(--colorWhite);
+    font-weight: 400;
+}
+
+.navBar h4 a:hover {
+    transition: var(--transition);
+    color: var(--colorPink);
+    cursor: pointer;
+}
+
+/**********
+***********
+navigation
+***********
+**********/
+nav .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav .row h3 {
+    color: var(--colorPink);
+    text-shadow: 2px 2px gray;
+    font-size: 1.3rem;
+}
+
+nav .row ul {
+    display: flex;
+    align-items: center;
+}
+
+nav .row ul a {
+    color: var(--colorFont);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+nav .row ul a:hover {
+    color: var(--colorPink);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+/**********
+***********
+header - ponuda
+***********
+**********/
+header.ponuda {
+    background-image: url(img/paris.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+header.ponuda .row hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 70vh;
+}
+
+header.ponuda .row hgroup {
+    color: var(--colorWhite);
+
+}
+
+header.ponuda .row hgroup h2 {
+    font-size: 3rem;
+}
+
+header.ponuda .row hgroup h5 {
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+/**********
+***********
+promo
+***********
+**********/
+.promo {
+    padding: var(--padding);
+    text-align: center;
+    color: var(--colorFont);
+}
+
+.promo > p {
+    font-size: .8rem;
+    margin: 30px 0;
+}
+
+.promo img {
+    width: 100%;
+}
+
+.promo .row {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+}
+
+.promo .row h3 {
+    color: var(--colorPink);
+}
+
+.promo .row p {
+    font-size: .9rem;
+}
+
+.promo .row .col:nth-child(1) {
+    flex: 0 0 50%;
+}
+
+.promo .row .col:nth-child(2) {
+    flex: 0 0 25%;
+}
+
+.promo .row .col:nth-child(2) h3 {
+    margin: 20px 0;
+}
+
+.promo .row .col:nth-child(3) {
+    flex: 0 0 25%;
+}
+
+.promo .row .col:nth-child(3) h3 {
+    margin: 20px 0;
+}
+
+.promo .row .col:nth-child(3) img {
+    margin-top: 35px;
+}
+
+/**********
+***********
+
+***********
+**********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********
+***********
+footer
+***********
+**********/
+footer {
+    background-color: var(--colorFooter);
+    padding: var(--padding);
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+footer .row h4 {
+    color: var(--colorPink);
+    margin-bottom: 30px;
+}
+
+footer .row p {
+    color: var(--colorWhite);
+    font-size: .8rem;
+}
+
+footer .row article:nth-child(1) {
+    flex: 0 0 40%;
+
+}
+
+footer .row article:nth-child(2) {
+    flex: 0 0 18%;
+
+}
+
+footer .row article:nth-child(2) ul li {
+    font-size: .8rem;
+
+}
+
+footer .row article:nth-child(3) {
+    flex: 0 0 40%;
+
+}
+
+footer .row article ul li {
+    color: var(--colorWhite);
+    /*    width: 30%;*/
+}
+
+/**********
+***********
+responsive
+***********
+**********/

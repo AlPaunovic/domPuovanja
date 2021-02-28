@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+    --fontFamily: 'Montserrat', sans-serif;
+    --colorFooter: #373b44;
+    --colorWhite: #fff;
+    --colorPink: #ffaad8;
+    /*255, 170, 216*/
+    --colorFont: #39393b;
+    --fontSize: 16px;
+    --padding: 50px 0;
+    --transition: .4 ease;
+
+}
+
+/**********
+***********
+basic style
+***********
+**********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.btn {
+    background: none;
+    border: 1px solid var(--colorWhite);
+    padding: 10px 30px;
+    color: var(--colorWhite);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background: var(--colorWhite);
+    color: var(--colorFooter);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+/**********
+***********
+navBar
+***********
+**********/
+.navBar {
+    background-color: var(--colorFooter);
+}
+
+.navBar h4 {
+    color: var(--colorWhite);
+    padding: 10px
+}
+
+.navBar h4 a {
+    color: var(--colorWhite);
+    font-weight: 400;
+}
+
+.navBar h4 a:hover {
+    transition: var(--transition);
+    color: var(--colorPink);
+    cursor: pointer;
+}
+
+/**********
+***********
+navigation
+***********
+**********/
+nav .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav .row h3 {
+    color: var(--colorPink);
+    text-shadow: 2px 2px gray;
+    font-size: 1.3rem;
+}
+
+nav .row ul {
+    display: flex;
+    align-items: center;
+}
+
+nav .row ul a {
+    color: var(--colorFont);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+nav .row ul a:hover {
+    color: var(--colorPink);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+/**********
+***********
+header
+***********
+**********/
+header {
+    background-image: linear-gradient(rgba(255, 170, 216, .2), rgba(255, 170, 216, .2)), url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+header hgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    color: var(--colorWhite);
+}
+
+header hgroup h1 {
+    font-size: 3rem;
+    text-shadow: 1px 2px var(--colorFont);
+}
+
+header hgroup h4 {
+    margin: 20px 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-shadow: 1px 2px var(--colorFont);
+}
+
+
+
+/**********
+***********
+destination
+***********
+**********/
+.destination {
+    padding: var(--padding);
+    text-align: center;
+}
+
+.destination h2 {
+    font-size: 1.8rem;
+}
+
+.destination h5 {
+    margin: 20px 0 40px;
+    background-color: var(--colorPink);
+    padding: 5px;
+    display: inline-block;
+}
+
+.destination img {
+    width: 100%;
+}
+
+.destination .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.destination .row article {
+    flex: 0 0 32%;
+}
+
+.destination .row p {
+    font-weight: 300;
+    font-style: italic;
+}
+
+/**********
+***********
+footer
+***********
+**********/
+footer {
+    background-color: var(--colorFooter);
+    padding: var(--padding);
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+footer .row h4 {
+    color: var(--colorPink);
+    margin-bottom: 30px;
+}
+
+footer .row p {
+    color: var(--colorWhite);
+    font-size: .8rem;
+}
+
+footer .row article:nth-child(1) {
+    flex: 0 0 40%;
+
+}
+
+footer .row article:nth-child(2) {
+    flex: 0 0 18%;
+
+}
+
+footer .row article:nth-child(2) ul li {
+    font-size: .8rem;
+
+}
+
+footer .row article:nth-child(3) {
+    flex: 0 0 40%;
+
+}
+
+footer .row article ul li {
+    color: var(--colorWhite);
+    /*    width: 30%;*/
+}
+
+/**********
+***********
+header - ponuda
+***********
+**********/
+header .ponuda {
+    background-image:url(img/paris.jpg);
+/*
+    background-position: center;
+    background-size: cover;
+*/
+}
+
+
+/**********
+***********
+
+***********
+**********/
+
+
+
+/**********
+***********
+
+***********
+**********/
