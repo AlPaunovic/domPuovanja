@@ -164,56 +164,63 @@ promo
 ***********
 **********/
 .promo {
-    padding: var(--padding);
     text-align: center;
-    color: var(--colorFont);
+    padding: var(--padding);
+
+
 }
 
-.promo > p {
-    font-size: .8rem;
-    margin: 30px 0;
+.promo .row {
+    border: 1px solid lightgray;
 }
 
 .promo img {
     width: 100%;
 }
 
-.promo .row {
+.promo h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.promo h3 {
+    color: var(--colorPink);
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.promo > p {
+    margin: 30px 0;
+}
+
+.promo .row .wrap {
     display: flex;
     justify-content: space-between;
-    border: 1px solid lightgray;
 }
 
-.promo .row h3 {
-    color: var(--colorPink);
-}
-
-.promo .row p {
-    font-size: .9rem;
-}
-
-.promo .row .col:nth-child(1) {
+.promo .row .wrap article {
     flex: 0 0 50%;
 }
 
-.promo .row .col:nth-child(2) {
-    flex: 0 0 25%;
+.promo .second {
+    display: flex;
 }
 
-.promo .row .col:nth-child(2) h3 {
-    margin: 20px 0;
+.promo .second img {
+    background-position: center;
+    background-size: cover;
 }
 
-.promo .row .col:nth-child(3) {
-    flex: 0 0 25%;
+.promo .second p {
+    font-size: .8rem;
 }
 
-.promo .row .col:nth-child(3) h3 {
-    margin: 20px 0;
+.promo .row .wrap article .second article {
+    flex: 0 0 50%;
 }
 
-.promo .row .col:nth-child(3) img {
-    margin-top: 35px;
+.promo .text {
+    padding: 30px 20px;
 }
 
 /**********
